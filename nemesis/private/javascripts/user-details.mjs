@@ -11,10 +11,10 @@ export function userDetails(user) {
     age.innerText = user.age;
     email.innerText = user.email;
     address.innerText = user.address;
-
 }
 
 (async function init() {
     let user = await getUser();
     userDetails(user);
 })();
+

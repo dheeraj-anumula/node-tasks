@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nemesis</title>
     <link rel="stylesheet" href="/bootstrap">
+    <script defer type="module" src="/static/javascripts/home.mjs"></script>
 </head>
 
 <body>
@@ -14,12 +15,20 @@
             <div class="col-sm">
                 <img src="/static/images/nemesis.JPG" alt="logo" class="img-thumbnail border-0 p-0">
             </div>
+            <div class="col-sm">
+                <strong class="email"></strong>
+            </div>
+            <div class="col-sm">
+                <form action="http://localhost:3000/logout">
+                    <input class="btn btn-warning float-right" type="submit" value="Sign Out" />
+                </form>
+            </div>
         </div>
         <div class="card border-0">
             <div class="card-body">
                 <h2 class="card-title welcome">Welcome to Nemesis</h2>
-                <form action="http://localhost:3000/login">
-                    <input class="btn btn-primary" type="submit" value="Login" />
+                <form action="http://localhost:3000/user-details">
+                    <input class="btn btn-success" type="submit" value="My Profile" />
                 </form>
             </div>
         </div>
