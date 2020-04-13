@@ -17,7 +17,7 @@ router.get('/login', user_authentication, function (req, res, next) {
   res.status(301).header({ Location: '/' + req.cookies.username }).send({});
 });
 
-router.get('/logout', function (req, res, next) {
+router.post('/logout', function (req, res, next) {
   res.clearCookie('auth_token');
   res.clearCookie('username');
   res.status(301).header({ Location: '/login' }).send({});

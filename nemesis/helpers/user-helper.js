@@ -15,7 +15,7 @@ function addPost(username, message) {
     let postAdded=false;
     db.map((item) => {
         if (item.username === username) {
-            item.posts.push({ id: item.posts.length + 1, message: message });
+            item.posts.unshift({ id: item.posts.length + 1, message: message });
             postAdded=true;
         }
     })
