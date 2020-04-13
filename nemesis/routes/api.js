@@ -55,7 +55,7 @@ router.post('/posts/new', authMiddleware, function (req, res, next) {
   const cred = req.body;
 
   if (!cred.message) {
-    return res.status(400).send({ status: 'not ok',error:"message should not be empty" });
+    return res.send({ status: 'not ok',error:"message should not be empty" });
   }
   let postAdded = addPost(req.cookies.username, cred.message);
 
