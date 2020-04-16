@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemesis</title>
+    <script defer type="module" src="/static/javascripts/user-details.mjs"></script>
+    <link rel="stylesheet" href="/bootstrap">
+</head>
+
+<body class="container">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <img src="/static/images/nemesis.JPG" alt="logo" class="img-thumbnail border-0 p-0">
+            </div>
+            <div class="col-sm">
+                <form action="http://localhost:3000/logout" method="POST">
+                    <input class="btn btn-warning float-right" type="submit" value="Sign Out" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="card mt-5">
+        <div class="card-body">
+            <h4 class="card-title">My Profile</h4>
+            <dl class="row">
+                <dd class="col-sm-4">First Name</dd>
+                <dd class="col-sm-6 fname"></dd>
+            </dl>
+            <dl class="row">
+                <dd class="col-sm-4">Last Name</dd>
+                <dd class="col-sm-6 lname"></dd>
+            </dl>
+            <dl class="row">
+                <dd class="col-sm-4">Age</dd>
+                <dd class="col-sm-6 age"></dd>
+            </dl>
+            <dl class="row">
+                <dd class="col-sm-4">Email</dd>
+                <dd class="col-sm-6 email"></dd>
+            </dl>
+            <dl class="row">
+                <dd class="col-sm-4">Address</dd>
+                <dd class="col-sm-6 address"></dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>

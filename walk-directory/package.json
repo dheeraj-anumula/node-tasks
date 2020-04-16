@@ -1,0 +1,12 @@
+{
+  "name": "walk-directory",
+  "version": "1.0.0",
+  "description": "walk through a directory and store the encrypted code for each file generated into one file",
+  "main": "main.js",
+  "scripts": {
+    "start":"node main.js C:\\Users\\Dheeraj_Anumula\\angular-projects\\user-management\\src C:\\Users\\Dheeraj_Anumula\\working\\youtube",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dheeraj Reddy Anumula",
+  "license": "ISC"
+}
